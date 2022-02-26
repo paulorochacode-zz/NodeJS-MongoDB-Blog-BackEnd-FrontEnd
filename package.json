@@ -1,0 +1,52 @@
+{
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/paulotomax/NodeJS-MongoDB-Blog-BackEnd.git"
+},
+"author": "",
+"license": "ISC",
+"bugs": {
+  "url": "https://github.com/paulotomax/NodeJS-MongoDB-Blog-BackEnd/issues"
+},
+"homepage": "https://github.com/paulotomax/NodeJS-MongoDB-Blog-BackEnd#readme",
+"dependencies": {
+  "bcryptjs": "^2.4.3",
+  "body-parser": "^1.19.2",
+  "connect-flash": "^0.1.1",
+  "express": "^4.17.3",
+  "express-handlebars": "^6.0.2",
+  "express-session": "^1.17.2",
+  "mongoose": "^6.2.2",
+  "passport": "^0.5.2",
+  "passport-local": "^1.0.0"
+},
+"name": "node-js-getting-started",
+"version": "0.3.0",
+"description": "A sample Node.js app using Express 4",
+"engines": {
+  "node": "14.x"
+},
+"main": "index.js",
+"scripts": {
+  "start": "node index.js",
+  "test": "node test.js"
+},
+"dependencies": {
+  "ejs": "^3.1",
+  "express": "^4.15.2"
+},
+"devDependencies": {
+  "got": "^11",
+  "tape": "^4"
+},
+"repository": {
+  "type": "git",
+  "url": "https://github.com/heroku/node-js-getting-started"
+},
+"keywords": [
+  "node",
+  "heroku",
+  "express"
+],
+"license": "MIT"
+}
