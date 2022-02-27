@@ -1,5 +1,6 @@
 
 const express = require ('express')
+const cors = require('cors')
 const rotas = require ('./routes/admin')
 const bodyParser = require('body-parser')
 const { engine } = require ('express-handlebars');
@@ -20,6 +21,12 @@ require("./config/auth")(passport)
 const {userName} = require("./config/auth")
 const db = require("./config/db")
 const port = process.env.PORT || 3002
+
+app.use ((req, res, next) =>{
+      app.use(cors());
+      res.header('Access-Control-Allow-Origin','*')
+      next();
+})
 app.listen(port,()=>{console.log('Server is running..')})
 //Configurations
       //Session
