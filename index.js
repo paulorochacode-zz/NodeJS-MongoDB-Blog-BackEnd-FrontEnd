@@ -61,7 +61,7 @@ app.use(express.static('public/img'));
 //Mongoose
 //create a new DB
 mongoose.Promise = global.Promise;
-mongoose.connect(db.MONGO_URI).then(() =>{
+mongoose.connect(db.uri).then(() =>{
       console.log("MongoDB Connected")
 }).catch((err) =>{
       console.log("Error by try to connect MongoDB: "+err)
